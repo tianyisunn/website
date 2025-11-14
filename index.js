@@ -3,20 +3,19 @@ const moonIcon = document.getElementById("icon-moon")
 const sunIcon = document.getElementById("icon-sun")
 const themeSwap = document.getElementById("theme-swap")
 const body = document.body
-const header = document.header
 
 function changeTheme(mode){
   if(mode === "dark"){
     moonIcon.style.display = 'none'
     sunIcon.style.display = 'block'
     body.classList.add('dark-theme')
-    localStorage.setItem = ("theme","dark")
+    localStorage.setItem("theme","dark")
   }
   else{
     moonIcon.style.display = 'block'
     sunIcon.style.display = 'none'
     body.classList.remove('dark-theme')
-    localStorage.setItem = ("theme","bright")
+    localStorage.setItem("theme","bright")
   }
 }
 //check previous theme
