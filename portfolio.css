@@ -109,6 +109,25 @@ body.dark-theme header{
   background-color:#3c096c;
 }
 
+body.dark-theme .name{
+  color:#e0aaff
+}
+
+body.dark-theme #video p{
+  color:#ff6d00 ;
+} 
+body.dark-theme #introduction p,
+body.dark-theme #myWorks p,
+body.dark-theme footer{
+  color:#efd9ce
+}
+
+body.dark-theme #myWorks h2,
+body.dark-theme #myWorks a,
+body.dark-theme #contacts{
+  color:#f4effa
+}
+
 /*Eye section */
 #video video{
   margin: 80px 0;            
@@ -144,7 +163,6 @@ body.dark-theme header{
 #introduction{
   display: flex;
   align-items: center;
- 
 }
 
 #pic {
@@ -156,7 +174,6 @@ body.dark-theme header{
 }
 
 #introduction p{
-  
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
   color: #222;
