@@ -98,20 +98,15 @@ header ul li a:hover {
 }
 
 body.dark-theme{
-  background-color: #3c096c;
+  background-color: #5a189a;
   margin: 0;
   width: 100%;
   display:block;
   cursor: url('navigation-clean-24.png') 0 0,auto;
 }
 
-header.dark-theme{
-  background-color:#240046;
-  padding: 0 40px;         
-  height: 80px;            
-  display: flex;          
-  align-items: center;    
-  justify-content:space-between
+body.dark-theme header{
+  background-color:#3c096c;
 }
 
 /*Eye section */
