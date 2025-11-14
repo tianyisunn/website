@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Quicksand:wght@300..700&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Fredericka+the+Great&family=Rubik+Vinyl&display=swap');
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background-color: #f0f8ff;
+  margin: 0;
+  width: 100%;
+  display:block;
+  cursor: url('navigation-clean-24.png') 0 0,auto;
+}
+
+header{
+  background-color:#e6f2ff;
+  padding: 0 40px;         
+  height: 80px;            
+  display: flex;          
+  align-items: center;    
+  justify-content:space-between
+}
+
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap:30px;
+  padding:0;
+  margin:0;
+}
+
+nav ul li.right{
+  margin-left:auto;
+}
+
+
+a.about {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color:#ff6d00;
+  transition: transform 0.3s ease;
+}
+
+header ul li a {
+  display: inline-block;         
+  transition: transform 0.3s ease;
+}
+
+header ul li a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color:#ffd500;
+  text-decoration-thickness: 1.5px;
+  transform: scale(1.2);
+}
+
+.right{
+  margin-left: auto;
+  display: flex;
+  gap:30px;
+}
+.name {
+  font-family: "Fredericka the Great", serif;
+  font-size: 28px;           
+  color: #5a189a;              
+  text-decoration: none;    
+  cursor: pointer;           
+  transition: color 0.3s, transform 0.3s;
+}
+
+.name:hover {
+  color: #8849b1;            
+  display: inline-block; 
+  /*text-decoration: underline;*/
+  text-decoration-thickness: 1.5px;
+  transform: scale(1.2);
+}
+
+/*videos*/
+.video1 video{            
+  width: 50%;                 
+  max-width: 900px;           
+  display: block;
+  margin: 40px auto 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+}
+
+h2{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #403d39;
+  margin-bottom: 5px;
+}
+
+p{
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  color: #403d39;
+}
+
+p a:hover{
+  color: #8849b1;
+}
+
+/*footer*/
+h3{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.itemset{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:25px;
+  padding: 20px;
+}
+
+.itemset img{
+ max-width: 40px;
+ max-height: 40px;
+ object-fit: contain;
+}
+
+.itemset img:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+#contacts{
+  padding:40px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.05);  
+  text-align: center;
+  padding: 30px 0;                      
+  font-size: 14px;
+  color: #33333384;
+}
