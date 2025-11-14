@@ -10,7 +10,7 @@ body{
   margin: 0;
   width: 100%;
   display:block;
-  cursor: url('navigation-clean-24.png') 0 0,auto;
+  cursor: url('media/navigation-clean-24.png') 0 0,auto;
 }
 header{
   background-color:#e6f2ff;
@@ -100,7 +100,7 @@ body.dark-theme{
   margin: 0;
   width: 100%;
   display:block;
-  cursor: url('navigation-clean-24.png') 0 0,auto;
+  cursor: url('media/navigation-clean-24.png') 0 0,auto;
 }
 
 body.dark-theme header{
