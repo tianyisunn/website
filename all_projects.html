@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>EmmaSun</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="all_projects.css">
     
     
   </head>
-  <body>
-    
-    <!--header section-main navigation-->
+
+ <body>
+ <!--header section-main navigation-->
     <header>
       <a href="#top" class="name">Emma Sun</a><!--logo,click and go back to top-->
       <nav>
@@ -22,7 +22,7 @@
               <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
               </svg>
-              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg"     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+              <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg"     width="24" height="24"      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
                 <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -37,46 +37,38 @@
           </li>
         </ul>
       </nav>
-      
     </header>
-    
-    <section id="allworks">
-     <div class="practices">
-       <h2>Practices on Color Composition</h2>
-       <div class="practice1">
-         <img src="media/tree.jpg" alt="practice 1">
-         <img src="media/flower2.jpg" alt="practice 1">
-       </div>
 
-       <h2>Folded Forms: The 3D Sphere</h2>
-       <div class="practice2">
-         <img src="media/3d.jpg" alt="practice 2">
-       </div>
-
-       <h2>Other Painting and Design Works</h2>
-       <div class="practice3">
-         <img src="media/hand1.png" alt="practice 3">
-         <img src="media/hand.png" alt="practice 3">
-         <img src="media/hand3.png" alt="practice 3">
-       </div>
+ <!--filter-->
+  <main class="works-page">
+    <section class="works-filter">
+     <h1>Projects</h1>
+     <div class="filter-buttons">
+       <button class="filter-btn is-active" data-filter="all">All</button>
+       <button class="filter-btn" data-filter="video">Video</button>
+       <button class="filter-btn" data-filter="product">Product</button>
+       <button class="filter-btn" data-filter="Practice">Practice</button>
      </div>
-   </section>
-
-    <!--contact-->
-    <section id="contacts">
-      <h3>Let's collaborate!</h3>
-      <div class="itemset">
-        <a href="https://github.com/tianyisunn" target="_blank" id="github"><img src="media/github-icon.png" alt= github></a>
-        <a href="https://www.instagram.com/emmatianyi?igsh=YXBvcDB1b2ZqNG9n&utm_source=qr" target="_blank" id="insta"><img src="media/insta-icon.png" alt= Instagram></a>
-        <a href="https://www.linkedin.com/in/tianyi-sun-138798325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" id="linkedin"><img src="media/download.png" alt= Linkedin></a>
-      </div>
     </section>
 
+ <!--works display-->
+    <section class="works-slider">
+      <button class="slider-btn left" id="leftbtn">&#10094;</button>
+      <div class="slide">
+       <img id="slide-img" src="" alt="">
+       <h2 id="slide-title"></h2>
+       <p id="slide-tags"></p>
+      </div>
+      <button class="slider-btn right" id="rightbtn">&#10095;</button>
+    </section>
+  </main>
 
-      <!--footer-->
-      <footer>
+
+ <!--footer-->
+    <footer>
         <p>&copy; 2025 Emma Sun. </p>
-      </footer>
-  </body>
+    </footer>
+ </body>
   <script src="index.js"></script>
+  <script src="filter.js"></script>
 </html>
