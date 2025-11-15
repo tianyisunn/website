@@ -111,18 +111,163 @@ body.dark-theme .name{
   color:#e0aaff
 }
 
+/*filter btn*/
+.works-filter {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.works-filter h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.3rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  border: 1px solid #10002b;
+  background: #f3deff;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.filter-btn.dark-mode{
+  border: 1px solid #10002b;
+  background: #e0aaff;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.filter-btn.is-active {
+  background: #111;
+  color: #f3deff;
+}
+
 /*projects*/
+
 h1{
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
 }
 
+body.dark-theme h1{
+  color:#f3deff;
+}
 .works-filter{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  margin: 30px;
 }
+
+
+.works-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin:0 auto;
+}
+
+
+.slide {
+  background: #f3deff;
+  border-radius: 18px;
+  padding: 8rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body.dark-theme .slide{
+  background: #f3deff;
+}
+
+
+
+/* 图片外再套一层框，专门做居中显示 */
+.slide-image-wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 60vh;     /* 整个图片区域不超过视口高度的 60% */
+  margin-bottom: 1rem;
+}
+
+/* 图片本身：按原比例缩放，不拉伸 */
+#slide-img {
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;          /* 不强制撑满宽度 */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+
+/* 标题 */
+#slide-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 描述 */
+#slide-desc {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.slider-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, color 0.15s ease;
+  color: #333;
+}
+
+.slider-btn:hover {
+  transform: scale(1.12);
+  color: #000;
+}
+
+.slider-btn:active {
+  transform: scale(0.96);
+}*/
+
 
 /*contacts*/
 #contacts{
@@ -135,4 +280,8 @@ footer {
   padding: 30px 0;                     
   font-size: 14px;
   color: #33333384;
+}
+
+body.dark-theme footer{
+  color: #f0f8ff;
 }

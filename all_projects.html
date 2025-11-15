@@ -11,7 +11,7 @@
  <body>
  <!--header section-main navigation-->
     <header>
-      <a href="#top" class="name">Emma Sun</a><!--logo,click and go back to top-->
+      <a href="index.html" class="name">Emma Sun</a><!--logo,click and go back to top-->
       <nav>
         <ul>
           <li class="menu right"><a href="index.html#introduction" class="about">About</a></li>
@@ -45,7 +45,7 @@
      <h1>Projects</h1>
      <div class="filter-buttons">
        <button class="filter-btn is-active" data-filter="all">All</button>
-       <button class="filter-btn" data-filter="video">Video</button>
+       <!--<button class="filter-btn" data-filter="video">Video</button>-->
        <button class="filter-btn" data-filter="product">Product</button>
        <button class="filter-btn" data-filter="Practice">Practice</button>
      </div>
@@ -53,13 +53,14 @@
 
  <!--works display-->
     <section class="works-slider">
-      <button class="slider-btn left" id="leftbtn">&#10094;</button>
+     
       <div class="slide">
-       <img id="slide-img" src="" alt="">
-       <h2 id="slide-title"></h2>
-       <p id="slide-tags"></p>
+        <div class="slide-image-wrapper">
+          <img id="slide-img" src="" alt="">
+        </div>
+        <h2 id="slide-title"></h2>
+        <p id="slide-desc"></p>
       </div>
-      <button class="slider-btn right" id="rightbtn">&#10095;</button>
     </section>
   </main>
 
