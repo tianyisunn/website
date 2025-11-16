@@ -299,7 +299,12 @@ h3{
   font-style: normal;
   font-size: 2rem;                    
   text-decoration: none;  
-  cursor: pointer;         
+  cursor: pointer; 
+  padding:10px;        
+}
+
+body.dark-theme #viewall{
+  color:#f4effa
 }
 
 #arrowright{
