@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", getWeather);
 
 async function getWeather() {
-  const apiKey = "c0e184e891c630aa9e4e240491df4779"; // <-- replace with your OpenWeather API key
+  const apiKey = "c0e184e891c630aa9e4e240491df4779"; 
   const city = "Dublin";
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
