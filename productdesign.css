@@ -11,6 +11,7 @@ body{
   width: 100%;
   display:block;
   cursor: url('media/navigation-clean-24.png') 0 0,auto;
+  padding: auto 15px auto 15px;
 }
 
 header{
@@ -135,12 +136,16 @@ body.dark-theme .name{
 }
 
 h2{
-  font-family: "Playfair Display", serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-style: normal;
   text-align: left;
   color: #403d39;
   margin-bottom: 5px;
+}
+
+body.dark-theme h2{
+  color:#f0f8ff
 }
 
 /*footer*/
@@ -180,4 +185,8 @@ footer {
   padding: 30px 0;                    
   font-size: 14px;
   color: #33333384;
+}
+
+body.dark-theme footer{
+  color: #f0f8ff;
 }

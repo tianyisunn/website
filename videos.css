@@ -111,12 +111,17 @@ body.dark-theme .name{
 }
 
 /*videos*/
-.video1 video{            
-  width: 50%;                 
-  max-width: 900px;           
+.scroll-video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+#scrollVideo{
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 40px auto 40px auto;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+  border-radius: 16px;
 }
 
 h2{
@@ -140,6 +145,60 @@ p{
 
 p a:hover{
   color: #8849b1;
+}
+
+#video-teasers {
+  max-width: 900px;
+  margin: 4rem auto;
+}
+
+#video-teasers > h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* 每一段视频 section */
+.scroll-video-section {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.8fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.scroll-video-text h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.scroll-video-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 视频容器 & 视频本身 */
+.scroll-video-wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+.scroll-video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 小屏幕就堆叠 */
+@media (max-width: 768px) {
+  .scroll-video-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*footer*/
@@ -179,4 +238,8 @@ footer {
   padding: 30px 0;                      
   font-size: 14px;
   color: #33333384;
+}
+
+body.dark-theme footer{
+  color: #f0f8ff;
 }

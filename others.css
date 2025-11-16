@@ -200,3 +200,6 @@ footer {
   font-size: 14px;
   color: #33333384;
 }
+body.dark-theme footer{
+  color: #f0f8ff;
+}
