@@ -107,7 +107,8 @@ body.dark-theme header{
   background-color:#3c096c;
 }
 
-body.dark-theme .name{
+body.dark-theme .name,
+body.dark-theme .practices h2{
   color:#e0aaff
 }
 
