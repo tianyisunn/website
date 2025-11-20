@@ -106,9 +106,23 @@ body.dark-theme header{
   background-color:#3c096c;
 }
 
-body.dark-theme .name{
+body.dark-theme .name,
+body.dark-theme .scroll-video-section p,
+body.dark-theme .more p a{
   color:#e0aaff
 }
+
+body.dark-theme #video-teasers h2,
+body.dark-theme footer p,
+body.dark-theme .more p,
+body.dark-theme .scroll-video-section h3{
+  color:#f4effa
+}
+
+body.dark-theme .more p a:hover{
+  color:#8849b1
+}
+
 
 /*videos*/
 .scroll-video-wrapper {
@@ -143,7 +157,7 @@ p{
   color: #403d39;
 }
 
-p a:hover{
+.more p a:hover{
   color: #8849b1;
 }
 
@@ -152,11 +166,13 @@ p a:hover{
   margin: 4rem auto;
 }
 
-#video-teasers > h2 {
+#video-teasers h2 {
   text-align: center;
   margin-bottom: 2.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
 }
 
 /* 每一段视频 section */
@@ -178,6 +194,8 @@ p a:hover{
 .scroll-video-text p {
   font-size: 0.95rem;
   line-height: 1.6;
+  font-family: "Crafty Girls", cursive;
+
 }
 
 /* 视频容器 & 视频本身 */
@@ -199,6 +217,11 @@ p a:hover{
   .scroll-video-section {
     grid-template-columns: 1fr;
   }
+}
+
+.more p{
+  color:#403d39;
+  font-family: "Quicksand", sans-serif; 
 }
 
 /*footer*/
@@ -238,8 +261,4 @@ footer {
   padding: 30px 0;                      
   font-size: 14px;
   color: #33333384;
-}
-
-body.dark-theme footer{
-  color: #f0f8ff;
 }
