@@ -50,10 +50,10 @@ const slideTitle = document.getElementById('slide-title');
 const slideDesc  = document.getElementById('slide-desc');
 const filterBtns = document.querySelectorAll('.filter-btn');
 
-let currentFilter = 'all';           // 当前选中的 filter 类型
-let currentList   = projects.slice(); // 当前要轮播的作品列表
-let currentIndex  = 0;               // 当前播到列表中的第几张
-let timer         = null;            // 自动轮播的计时器 id
+let currentFilter = 'all';         
+let currentList   = projects.slice(); 
+let currentIndex  = 0;               
+let timer         = null;          
 
 
 
